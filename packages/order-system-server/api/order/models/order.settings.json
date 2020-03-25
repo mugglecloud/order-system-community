@@ -28,7 +28,8 @@
     },
     "creator": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "created_orders"
     }
   }
 }

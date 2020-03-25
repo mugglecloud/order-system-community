@@ -53,6 +53,10 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "created_orders": {
+      "via": "creator",
+      "collection": "order"
     }
   }
 }
