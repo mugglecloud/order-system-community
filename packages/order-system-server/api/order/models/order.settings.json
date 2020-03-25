@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "orders",
+  "info": {
+    "name": "order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "created",
+        "accepted",
+        "dropped",
+        "done"
+      ]
+    },
+    "payload": {
+      "type": "dynamiczone",
+      "components": [
+        "financial.stock",
+        "e-bussiness.ebuss"
+      ]
+    },
+    "creator": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

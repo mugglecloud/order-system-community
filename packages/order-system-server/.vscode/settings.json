@@ -1,0 +1,10 @@
+{
+  "sqltools.connections": [
+    {
+      "database": "${workspaceFolder}\\.tmp/data.db",
+      "dialect": "SQLite",
+      "name": "order system"
+    }
+  ],
+  "sqltools.useNodeRuntime": true
+}

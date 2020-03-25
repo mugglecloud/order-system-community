@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "components_e_bussiness_ebusses",
+  "info": {
+    "name": "ebuss",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "buyer": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "seller": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

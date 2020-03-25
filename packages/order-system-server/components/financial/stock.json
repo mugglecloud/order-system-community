@@ -1,0 +1,10 @@
+{
+  "connection": "default",
+  "collectionName": "components_financial_stocks",
+  "info": {
+    "name": "stock",
+    "icon": "money-bill-wave-alt"
+  },
+  "options": {},
+  "attributes": {}
+}
