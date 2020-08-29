@@ -14,22 +14,23 @@
       "type": "enumeration",
       "enum": [
         "created",
-        "accepted",
         "dropped",
         "done"
-      ]
-    },
-    "payload": {
-      "type": "dynamiczone",
-      "components": [
-        "financial.stock",
-        "e-bussiness.ebuss"
       ]
     },
     "creator": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "created_orders"
+    },
+    "orderNo": {
+      "type": "uid"
+    },
+    "payload": {
+      "type": "json"
+    },
+    "price": {
+      "type": "decimal"
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "connection": "default",
+  "collectionName": "order_processes",
+  "info": {
+    "name": "OrderProcess"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pay",
+        "deliver",
+        "receive",
+        "evaluate",
+        "refund",
+        "closed"
+      ]
+    },
+    "order": {
+      "model": "order"
+    }
+  }
+}
